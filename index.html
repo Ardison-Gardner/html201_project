@@ -13,6 +13,8 @@
     color: orange;
   }
   .center {
+    display: block;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -21,12 +23,33 @@
   }
 </style>
 <body bgcolor="#000000" background="img/stars.gif" text="orange">
-  <table width="500" border="0" class="center">
+  <div>
+    <table border="0" width="500" height="60">
+      <tbody>
+        <tr>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <table width="500" border="5" class="center">
     <tbody>
       <tr>
         <td>CELL 1.1</td>
         <td colspan="3" align="center" valign="middle" width="350"> CELL 2.1</td>
         <td>CELL 3.1</td>
+      </tr>
+      <tr>
+        <td>CELL 1.2</td>
+        <td colspan="3" align="center" valign="middle" width="350">
+          <iframe width="310" height="240" src="https://www.youtube.com/embed/I4_3PVFSUxE" title="YouTube video player" frameborder="0" allowfullscreen autoplay></iframe>
+        </td>
+        <td>CELL 3.2</td>
+      </tr>
+      <tr>
+        <td>CELL 1.3</td>
+        <td colspan="3" align="center" valign="middle" width="350">CELL 2.3</td>
+        <td>CELL 3.3</td>
       </tr>
     </tbody>
   </table>
